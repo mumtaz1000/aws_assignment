@@ -1,0 +1,2 @@
+ls -l
+aws cloudformation create-stack --stack-name DemoStack --template-body file://ec2_demo.yaml

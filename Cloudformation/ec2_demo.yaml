@@ -1,7 +1,7 @@
 ---
 AWSTemplateFormatVersion: "2010-09-09"
 
-Description: "Demo EC2 Template"
+Description: "Demo EC2 Template from Script"
 
 Resources:
   DemoEc2Instance:
@@ -9,9 +9,9 @@ Resources:
     Properties:
       SecurityGroups:
         - !Ref InstanceSecurityGroup
-        - MyExistingSecurityGroup
-      KeyName: mykey
-      ImageId: ''
+      KeyName: NginxServerKey
+      ImageId: ami-0d15082500b576303
+
   InstanceSecurityGroup:
     Type: 'AWS::EC2::SecurityGroup'
     Properties:
